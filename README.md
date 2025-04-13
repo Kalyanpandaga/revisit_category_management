@@ -82,6 +82,12 @@ FRONTEND_URL=http://localhost:3000
 npm start
 ```
 
+5. Backend Deploy Link
+
+```bash
+https://revisit-category-management-backend-0rbd.onrender.com/api/auth/login
+```
+
 ### Frontend Setup
 
 1. Navigate to frontend directory:
@@ -106,6 +112,12 @@ REACT_APP_API_URL=http://localhost:5000
 
 ```bash
 npm start
+```
+
+5. Deploy link:
+
+```bash
+https://revisit-category-management-react-app.onrender.com
 ```
 
 ## 📁 Project Structure
