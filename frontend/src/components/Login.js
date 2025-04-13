@@ -25,7 +25,6 @@ const Login = () => {
 
     try {
       const url = API_BASE_URL + "/auth/login";
-      console.log(url);
       const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -37,8 +36,8 @@ const Login = () => {
       const data = await response.json();
 
       if (response.ok) {
-        Cookies.set("jwt_token", data.token);
-        Cookies.set("user", JSON.stringify(data.user));
+        Cookies.set("jwt_token", data.token, { expires: 23 / 24 });
+        Cookies.set("user", JSON.stringify(data.user), { expires: 23 / 24 });
         navigate(ROUTES.DASHBOARD);
       } else {
         setShowError(true);
